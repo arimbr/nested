@@ -1,0 +1,25 @@
+{% extends "welcome.html" %}
+
+{% block head %}
+
+    <title>Nested</title>
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />
+
+{% endblock %}
+
+{% block welcome %} 
+        
+    <div style='margin-top: 30px'>
+        <img border="0" align='left' src="http://img33.imageshack.us/img33/6242/eazkwvmphd.png" alt="Pulpit rock" width="304" height="228">
+        <div style='font-size: 20px'>Nested</div>
+        <hr>
+        <p style='font-size: 14px'>The natural way to structure content for learning purposes.</p>
+        <hr>
+        <p style='font-size: 14px'>You can create documents in a <a href="/">nested way</a>.</p>
+        <p style='font-size: 14px'>Share your documents with the world.</p>
+        <p style='font-size: 14px'>Navigate through different levels.</p>
+        <hr>
+        <p style='font-size: 14px'><a href="/register">Get started with Nested</a></p>
+    </div>
+
+{% endblock %}

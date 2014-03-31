@@ -1,0 +1,25 @@
+{% extends "welcome.html" %}
+
+{% block head %}
+
+    <title>Home</title>
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />
+
+{% endblock %}
+
+{% block welcome %} 
+        
+    <div style='margin-top: 30px'>
+        <img border="0" align='left' src="http://img33.imageshack.us/img33/6242/eazkwvmphd.png" alt="Pulpit rock" width="304" height="228">
+        <div style='font-size: 22px;'>Nestedoc</div>
+        <hr>
+        <p style='font-size: 16px'>A Nested Document creation tool.</p>
+        <p style='font-size: 16px'>The natural way to structure content for learning purposes.</p>
+        <hr>
+        <p style='font-size: 16px'>As you create your document, structure it in a nested way.</p>
+        <p style='font-size: 16px'>Navigate through different levels, hide and show content.</p>
+        <hr>
+        <input type="button" onclick="location.href='/documents'" value="Try demo">
+    </div>
+
+{% endblock %}

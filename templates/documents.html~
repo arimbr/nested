@@ -1,0 +1,38 @@
+{% extends "main.html" %}
+
+{% block head %}
+
+    <title>Documents</title>
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />
+
+{% endblock %}
+
+{% block bar %}
+
+    <input type="button" value="New document" onclick='window.location.href="/new"'>
+
+{% endblock %}
+
+{% block menu %}
+{% endblock %}
+
+{% block document %}
+
+    {% for document in documents %}
+        <div>
+            <a style='font-size: 14px' href='/documents/{{document.key().id()}}'>{{document.name}}</a>
+            <br>
+            <span style='font-size: 14px'>last modified on {{document.created.strftime("%b %d, %Y")}}</span>
+        </div>
+    {% endfor %}
+
+    {% if help %}
+        <div style='font-size: 14px'>
+            <p style='font-size: 14px'>You can:</p>
+            <li>Experience the document creation clicking on 'New document'.</li>
+            <li>Navigate throught the 'Example document'.</li>
+            <p style='font-size: 14px'>To save and edit your documents, you need to create an account.</p>
+        </div>
+    {% endif %}
+ 
+{% endblock %}

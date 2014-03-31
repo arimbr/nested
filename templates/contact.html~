@@ -1,0 +1,21 @@
+{% extends "welcome.html" %}
+
+{% block head %}
+
+    <title>Report</title>
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />
+
+{% endblock %}
+
+{% block welcome %}
+
+<div style='margin-top: 30px'>
+
+    <img border="0" align='left' src="http://img33.imageshack.us/img33/6242/eazkwvmphd.png" alt="Pulpit rock" width="304" height="228">
+    <div style='font-size: 20px'>Contact</div>
+    <hr>
+    <p style='font-size: 14px'>You can contact me by emal. My gmail account is arimbr.</p>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+<! DOCTYPE html>
+
+<html>
+
+    <head>  
+        {% block head %}
+        {% endblock %}
+    </head>
+
+    <body>
+
+        <nav>
+            <div id='container'>             
+                <div id='home'><a href='/'>Nested</a></div>
+                {% if user %}
+                    <div id='logout'>
+                        <a href="/logout">Sign out</a>
+                    </div>
+                    <div id='user'>
+                        <a href="/documents">{{user.name}}</a>
+                    </div>
+                {% else %}
+                    <div id='login'><a href='/login'>Sign in</a></div> 
+                {% endif %}    
+            </div>  
+        </nav>
+
+        <div id='welcome'>
+            {% block welcome %}
+            {% endblock %}     
+        </div>
+
+        <footer>
+
+            <ul>
+                <li id='about'><a href='/about'>About</a></li>
+            </ul>
+
+        </footer>
+
+    </body>
+
+</html>

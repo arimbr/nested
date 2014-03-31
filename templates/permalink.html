@@ -1,0 +1,58 @@
+{% extends "main.html" %}
+
+{% block head %}
+
+    <title>Nested: Document</title>
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script type="text/javascript" src='/js/script.js'></script>
+    
+{% endblock %}
+
+{% block bar %}
+
+    <button id='buttonToEditDocument'>Edit</button>
+    <button id='buttonToSaveConfiguration'>Save</button>
+    <button id='buttonToSaveChanges'>Save</button>
+    <button id='buttonToToggle'>Less</button>
+    
+{% endblock %}
+
+{% block menu %}
+
+<div id='menu-edition' style='display: none;'>
+
+    <ul>
+        <div id='instructions'>Click to select</div> 
+        <li>
+            <div id='insert'>Insert a block</div>
+            <button id='buttonToInsertAfter'>After</button>
+            <button id='buttonToInsertInside'>Inside</button>
+        </li>
+        <li><br></li>
+        <li>
+            <div id='delete'>Delete a block</div>
+            <button id='buttonToDelete'>Delete</button>
+        </li>
+        <li><br></li>
+        <li>
+            <div id='edit'>Edit the content</div>
+            <textarea id="TitleArea"></textarea>
+            <textarea id="TextArea"></textarea>
+        </li>
+        <li>
+            <button id='buttonToEdit'>Edit</button>
+        </li>
+    </ul>
+
+</div>
+    
+{% endblock %}
+
+{% block document %}
+
+    {{doc.document | safe}}
+
+{% endblock %}
+
+

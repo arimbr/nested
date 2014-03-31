@@ -1,0 +1,75 @@
+{% extends "main.html" %}
+
+{% block head %}
+
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script type="text/javascript" src='/js/script.js'></script>
+    
+{% endblock %}
+
+{% block bar %}
+
+    <button id='buttonToEditDocument'>Edit document</button>
+    <button id='buttonToSaveChanges'>Save changes</button>
+    <button id='buttonToDeleteDocument'>Delete document</button>
+    
+{% endblock %}
+
+{% block menu %}
+
+<div id='menu-navegation'>
+
+    <ul>
+        <div id='instructions'>Click to Select</div> 
+        <li>
+            <div id='navigation'>Navigation</div>
+            <button id='buttonToToggle'>Hide</button>
+        </li>
+        <li><br></li>
+        <li>
+            <div id='configuration'>Configuration</div>
+            <button id='buttonToSaveConfiguration'>Save</button>
+        </li>
+    </ul>
+
+</div>
+
+<div id='menu-edition' style='display: none;'>
+
+    <ul>
+        <div id='instructions'>Click to select</div> 
+        <li>
+            <div id='insert'>Insert a block</div>
+            <button id='buttonToInsertAfter'>after</button>
+            <button id='buttonToInsertInside'>inside</button>
+        </li>
+        <li><br></li>
+        <li>
+            <div id='delete'>Delete a block</div>
+            <button id='buttonToDelete'>Delete</button>
+        </li>
+        <li><br></li>
+        <li>
+            <div id='edit'>Edit the content</div>
+            <textarea id="TitleArea"></textarea>
+            <textarea id="TextArea"></textarea>
+        </li>
+        <li>
+            <button id='buttonToEdit'>Edit</button>
+            <button id='buttonToClear'>Clear</button>
+        </li>
+    </ul>
+
+</div>
+    
+{% endblock %}
+
+{% block document %}
+
+    {{doc.document | safe}}
+
+{% endblock %}
+
+

@@ -1,0 +1,401 @@
+body {
+
+    width: 100%;
+    margin: auto;
+    padding: auto;
+
+    font-family: sans-serif;
+    color: #202020;
+
+    background: #eceff6;
+
+    /* overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll; */
+}
+
+/* Navegation */
+
+a {
+
+    color: #6183A6;
+    text-decoration: underline;
+}
+
+a:hover {
+
+    color: #3b5998;
+    text-decoration: underline;
+}
+
+nav {
+
+    min-width: 1200px;
+    height: 60px;
+    background: #3b5998;
+    margin-bottom: 10px;
+
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #6183A6;
+}
+
+#container {
+
+    width: 980px;
+    margin-left: 180px;
+}
+
+nav div a {
+
+    color: #f7f7f7;
+    font-family: arial;
+    text-decoration: none;
+    margin: 0px 5px;
+    font-weight: normal;
+}
+
+nav div#home a {
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav div#login a {
+
+    font-size: 14px;
+    font-weight: normal;
+}
+
+nav div#logout a {
+
+    font-size: 14px;
+    font-weight: normal;
+}
+
+nav div#user a {
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav div a:hover {
+
+        color: #6183A6;
+        text-decoration: none;
+}
+
+nav div#login a:hover {
+
+        color: #3b5998;
+        text-decoration: none;
+}
+    
+nav div#logout a:hover {
+
+        color: #3b5998;
+        text-decoration: none;
+}
+    
+nav div#home {
+    
+    display: inline;
+    float: left;
+    margin: 20px 10px 0px 0px;
+}
+
+nav div#login {
+    
+    display: inline;
+    float: right;
+    padding: 4px 11px;
+    margin: 20px 0px 0px 0px;
+    background-color: #6183A6;
+
+    border-style: solid;
+    border-color: #eceff6;
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+nav div#user {
+    
+    display: inline;
+    float: right;
+    margin: 25px 15px 0px 0px;
+    color: #f7f7f7;
+}
+
+nav div#logout {
+    
+    display: inline;
+    float: right;
+    padding: 4px 6px;
+    margin: 20px 0px 0px 0px;
+    background-color: #6183A6;
+
+    border-style: solid;
+    border-color: #eceff6;
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+/* Welcome */
+
+#welcome {
+
+    min-height: 280px;
+    width: 790px;
+    margin: 20px 180px 10px 180px;
+    padding: 30px 190px 60px 0px;
+
+    background: white;
+
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0 8px 6px -6px grey;
+	   -moz-box-shadow: 0 8px 6px -6px grey;
+	        box-shadow: 0 8px 6px -6px grey;
+}
+
+/* Content */
+
+#content {
+
+    min-height: 500px;
+    width: 940px;
+    margin: 20px 160px 10px 180px;
+    padding: 20px;
+    
+    background: white;
+
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0 8px 6px -6px grey;
+	   -moz-box-shadow: 0 8px 6px -6px grey;
+	        box-shadow: 0 8px 6px -6px grey;
+}
+
+/* Bar */
+
+#bar {
+    
+    width: 610px;
+    height: 30px;
+    margin: 10px 0px 0px 10px;
+    padding: 7px 20px 2px 20px;
+
+    background: #f7f7f7;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #585858;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+
+/* Menu */
+
+#menu {
+
+    width: 200px;
+    height: 450px;
+    padding: 10px 20px 20px 20px;
+    margin: 10px;
+
+    float: right;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #585858;
+    border-radius: 5px;
+}
+
+#menu ul {
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#instructions {
+    
+    font-size: 16px;
+    margin: 6px 0px 30px 0px;
+    padding: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: #585858;
+}
+
+#insert, #delete, #edit, #navigation, #configuration {
+    
+    font-size: 14px;
+    margin: 5px 0px;
+    padding: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#menu ul li textarea#TextArea {
+
+    width: 200px;
+    height: 120px;
+    margin: 5px 0px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+#menu ul li textarea#TitleArea {
+
+    width: 200px;
+    height: 42px;
+    margin: 5px 0px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+
+/* Document */
+
+#document {
+
+    width: 610px;
+    height: 420px;
+    margin: 0px 10px 10px 10px;
+    padding: 10px 20px;
+
+    overflow: auto;
+    overflow-y: scroll;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #585858;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#document div {
+
+    min-height: 30px;
+    margin: 10px 0px;
+    padding: 5px 10px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #585858;
+    border-radius: 3px;
+}
+
+#document div.selected {
+
+    border-width: 2px;
+}
+
+p { 
+
+    font-size: 12px;
+}
+
+h1 {
+
+    font-size: 20px;
+}
+
+h2 {
+
+    font-family: arial;
+    font-size: 16px;
+}
+
+hr {
+
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+
+#buttonToSaveDocument {
+    
+    float: right;
+}
+
+#buttonToToggle {
+
+    float: right;
+    margin-right: 10px;
+}
+
+#buttonToSaveConfiguration {
+
+    float: right;
+}
+
+#buttonToDeleteDocument {
+    
+    float: right;
+    display: none;
+    margin-right: 10px;
+}
+
+#buttonToSaveChanges {
+
+    float: right;
+    display: none;
+}
+
+/* Footer */
+
+footer {
+
+    width: 950px;
+    padding: 10px 10px;
+    height: 50px;
+    margin: 0px 180px;
+}
+
+footer ul {
+
+    font-size: 12px;
+    color: #888888;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer ul li {
+
+    display: inline;
+}
+
+footer ul li a {
+
+    margin-right: 20px;
+}
+
+footer a {
+
+    text-decoration: none;
+    color: #888888;
+}
+
+footer a:hover {
+
+    color: black;
+}
+

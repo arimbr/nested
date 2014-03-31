@@ -1,0 +1,42 @@
+<! DOCTYPE html>
+
+<html>
+
+    <head>  
+        {% block head %}
+        {% endblock %}
+    </head>
+
+    <body>
+
+        <nav>             
+            <div id='home'><a href='/'>Nestedoc</a></div>
+            {% if user %}
+                <div id='logout'>
+                    {{user.name}} (<a href="/logout">logout</a>)
+                </div>
+            {% else %}
+                <div id='login'><a href='/login'>Login</a></div> 
+                <div id='register'><a href='/register'>Register</a>|</div> 
+            {% endif %}
+            <div id='documents'><a href='/documents'>Documents</a></div>      
+        </nav>
+
+        <div id='welcome'>
+            {% block welcome %}
+            {% endblock %}     
+        </div>
+
+        <footer>
+
+            <ul>
+                <li id='about'><a href='/about'>About</a></li>
+                <li id='contact'><a href='/contact'>Contact</a></li>
+                <li id='designed'><a>Created by @arimbr</a></li>
+            </ul>
+
+        </footer>
+
+    </body>
+
+</html>

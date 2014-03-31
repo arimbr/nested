@@ -1,0 +1,52 @@
+{% extends "welcome.html" %}
+
+{% block head %}
+
+    <title>Login</title>
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />
+    <style type="text/css">
+      .error {color: red}
+    </style>
+
+{% endblock %}
+
+{% block welcome %}
+
+<div style='margin-top: 30px'>
+    
+    <img border="0" align='left' src="http://img33.imageshack.us/img33/6242/eazkwvmphd.png" alt="Pulpit rock" width="304" height="228">
+
+    <div style='font-size: 20px'>Sign in</div>
+    <hr>
+    <form method="post">
+      <table>
+        <tr>
+          <td class="label">
+            Username:
+          </td>
+          <td>
+            <input type="text" name="username" value="{{username}}">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label">
+            Password:
+          </td>
+          <td>
+            <input type="password" name="password" value="">
+          </td>
+        </tr>
+      </table>
+
+      <div class="error">
+        {{error}}
+      </div>
+
+      <hr>
+      <input type="submit" value="Login">
+      <div><br>Don't have an account yet? <a href='/register'>Sign up</a></div>
+    </form>
+
+</div>
+{% endblock %}
